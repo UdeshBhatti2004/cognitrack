@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 
-const API = 'http://localhost:5000/api'
+const API = import.meta.env.VITE_API_URL + '/api'
 
 const inputStyle = {
   width: '100%', padding: '0.75rem 1rem',

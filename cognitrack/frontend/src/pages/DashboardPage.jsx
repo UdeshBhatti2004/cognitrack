@@ -5,7 +5,7 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend
 } from 'recharts'
 
-const API = 'http://localhost:5000/api'
+const API = import.meta.env.VITE_API_URL + '/api'
 
 const DOMAIN_CONFIG = {
   memory: { label: 'Memory', icon: '🧠', color: '#4f9cf9' },

@@ -6,7 +6,7 @@ import VisuospatialTask from '../tasks/VisuospatialTask'
 import ProcessingSpeedTask from '../tasks/ProcessingSpeedTask'
 import ExecutiveFunctionTask from '../tasks/ExecutiveFunctionTask'
 
-const API = 'http://localhost:5000/api'
+const API = import.meta.env.VITE_API_URL + '/api'
 
 const TASKS = [
   { id: 'memory', label: 'Memory', icon: '🧠', component: MemoryTask },
